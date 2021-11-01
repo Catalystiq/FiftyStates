@@ -26,7 +26,8 @@ public class NorthCarolina{
    }
    
    public void optionChooser(NorthCarolina northCarolina, String option, String[] object){
-   
+      FiftyStates fifty = new FiftyStates();
+      
       switch(option){
          case "flag":
             northCarolina.northCarolinaFlag(northCarolina, option, object);
