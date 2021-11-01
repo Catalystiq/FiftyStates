@@ -26,7 +26,7 @@ public class Layout{
    }
    
    public void optionChooser(Layout layout, String option, String[] object){
-      FiftyLayouts fifty = new FiftyLayouts();
+      FiftyStates fifty = new FiftyStates();
    
       switch(option){
          case "flag":
