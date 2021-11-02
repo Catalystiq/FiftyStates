@@ -5,10 +5,8 @@
 
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class Tennessee{
    Tennessee(){
@@ -99,7 +97,7 @@ public class Tennessee{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    

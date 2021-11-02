@@ -1,10 +1,8 @@
 //test oregon class
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class Oregon{
    Oregon(){
@@ -42,7 +40,7 @@ public class Oregon{
             oregon.oregonBirdSong(oregon, option, object);
             break;
          case "go back":
-            fifty.prompt(oregon);
+            fifty.prompt();
             break;
          case "exit":
             System.exit(0);
@@ -64,7 +62,7 @@ public class Oregon{
    public void oregonFlower(Oregon oregon, String option, String[] object){
       ImageIcon oregonFlowerImage = new ImageIcon("./img/flowers/OregonFlower.jpeg");
 
-      String oregonFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the Oregon state flower \n It is the Oregon grape\n \n Select an option for more information about Oregon, go back to select another state, or exit", "OregonFlower",
+      String oregonFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the Oregon state flower \n It is the Oregon Grape\n \n Select an option for more information about Oregon, go back to select another state, or exit", "OregonFlower",
             JOptionPane.PLAIN_MESSAGE, oregonFlowerImage, object, object[0]);
       oregon.optionChooser(oregon, oregonFlowerOption, object);
    }
@@ -72,7 +70,7 @@ public class Oregon{
    public void oregonBird(Oregon oregon, String option, String[] object){
       ImageIcon oregonBirdImage = new ImageIcon("./img/birds/OregonBird.jpeg");
 
-      String oregonBirdOption = (String) JOptionPane.showInputDialog(null, "This is the Oregon state bird \n It is the Western meadowlark \n \n Select an option for more information about Oregon, go back to select another state, or exit", "OregonBird",
+      String oregonBirdOption = (String) JOptionPane.showInputDialog(null, "This is the Oregon state bird \n It is the Western Meadowlark \n \n Select an option for more information about Oregon, go back to select another state, or exit", "OregonBird",
             JOptionPane.PLAIN_MESSAGE, oregonBirdImage, object, object[0]);
       oregon.optionChooser(oregon, oregonBirdOption, object);
    }
@@ -82,7 +80,7 @@ public class Oregon{
      
       JFrame frame = new JFrame("OregonBirdSong");
       JPanel canvas = new JPanel();
-      JLabel text = new JLabel("<html>This is Oregon state Bird Song! <br> It is the Western meadowlark Song <br> Click the play button to play the Oregon state bird song <br> Select go back to go to the Oregon state bird!<html>");
+      JLabel text = new JLabel("<html>This is Oregon state Bird Song! <br> It is the Western Meadowlark Song <br> Click the play button to play the Oregon state bird song <br> Select go back to go to the Oregon state bird!<html>");
       JLabel picture = new JLabel(oregonBirdSongImage);
       JButton play = new JButton("Play Bird Song!");
       JButton back = new JButton("Go Back!");
@@ -95,7 +93,7 @@ public class Oregon{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    

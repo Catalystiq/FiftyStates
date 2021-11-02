@@ -16,7 +16,22 @@ public class FiftyStates{
       ImageIcon map = new ImageIcon("./img/other/map.jpg");
       Alabama alabama = new Alabama();
       Alaska alaska = new Alaska();
+      Arizona arizona = new Arizona();
       NewMexico newMexico = new NewMexico();
+      NewYork newYork = new NewYork();
+      NorthCarolina northCarolina = new NorthCarolina();
+      Ohio ohio = new Ohio();
+      Oklahoma oklahoma = new Oklahoma();
+      Oregon oregon = new Oregon();
+      Pennsylvania pennsylvania = new Pennsylvania();
+      RhodeIsland rhodeIsland = new RhodeIsland();
+      SouthCarolina southCarolina = new SouthCarolina();
+      SouthDakota southDakota = new SouthDakota();
+      Tennessee tennessee = new Tennessee();
+      Texas texas = new Texas();
+      Utah utah = new Utah();
+      Vermont vermont = new Vermont();
+      Virginia virginia = new Virginia();
       
       String promptOption = (String) JOptionPane.showInputDialog(null, "Enter a State: ", "FiftyStates", JOptionPane.PLAIN_MESSAGE,
             map, null, null);
@@ -28,35 +43,53 @@ public class FiftyStates{
          case "alaska":
             alaska.alaskaPrompt();
             break;
+         case "arizona":
+            arizona.arizonaPrompt();
+            break;
          case "new mexico":
             newMexico.newMexicoPrompt();
             break;
          case "new york":
-            alabama.alabamaPrompt();
+            newYork.newYorkPrompt();
             break;
          case "north carolina":
-            alabama.alabamaPrompt();
+            northCarolina.northCarolinaPrompt();
             break;
          case "ohio":
-            alabama.alabamaPrompt();
+            ohio.ohioPrompt();
             break;
          case "oklahoma":
-            alabama.alabamaPrompt();
+            oklahoma.oklahomaPrompt();
             break;
          case "oregon":
-            alabama.alabamaPrompt();
+            oregon.oregonPrompt();
             break;
          case "pennsylvania":
-            alabama.alabamaPrompt();
+            pennsylvania.pennsylvaniaPrompt();
             break;
          case "rhode island":
-            alabama.alabamaPrompt();
+            rhodeIsland.rhodeIslandPrompt();
             break;
          case "south carolina":
-            alabama.alabamaPrompt();
+            southCarolina.southCarolinaPrompt();
             break;
          case "south dakota":
-            alabama.alabamaPrompt();
+            southDakota.southDakotaPrompt();
+            break;
+         case "tennessee":
+            tennessee.tennesseePrompt();
+            break;
+         case "texas":
+            texas.texasPrompt();
+            break;
+         case "utah":
+            utah.utahPrompt();
+            break;
+         case "vermont":
+            vermont.vermontPrompt();
+            break;
+         case "virginia":
+            virginia.virginiaPrompt();
             break;
          case "exit":
             System.exit(0);

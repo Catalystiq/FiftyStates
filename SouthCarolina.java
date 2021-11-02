@@ -1,10 +1,8 @@
 //test southCarolina class
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class SouthCarolina{
    SouthCarolina(){
@@ -42,7 +40,7 @@ public class SouthCarolina{
             southCarolina.southCarolinaBirdSong(southCarolina, option, object);
             break;
          case "go back":
-            fifty.prompt(southCarolina);
+            fifty.prompt();
             break;
          case "exit":
             System.exit(0);
@@ -64,7 +62,7 @@ public class SouthCarolina{
    public void southCarolinaFlower(SouthCarolina southCarolina, String option, String[] object){
       ImageIcon southCarolinaFlowerImage = new ImageIcon("./img/flowers/SouthCarolinaFlower.jpeg");
 
-      String southCarolinaFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the South Carolina state flower \n It is the Yellow jessamine\n \n Select an option for more information about South Carolina, go back to select another state, or exit", "SouthCarolinaFlower",
+      String southCarolinaFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the South Carolina state flower \n It is the Yellow Jessamine\n \n Select an option for more information about South Carolina, go back to select another state, or exit", "SouthCarolinaFlower",
             JOptionPane.PLAIN_MESSAGE, southCarolinaFlowerImage, object, object[0]);
       southCarolina.optionChooser(southCarolina, southCarolinaFlowerOption, object);
    }
@@ -72,7 +70,7 @@ public class SouthCarolina{
    public void southCarolinaBird(SouthCarolina southCarolina, String option, String[] object){
       ImageIcon southCarolinaBirdImage = new ImageIcon("./img/birds/SouthCarolinaBird.jpeg");
 
-      String southCarolinaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the South Carolina state bird \n It is the Carolina wren \n \n Select an option for more information about South Carolina, go back to select another state, or exit", "SouthCarolinaBird",
+      String southCarolinaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the South Carolina state bird \n It is the Carolina Wren \n \n Select an option for more information about South Carolina, go back to select another state, or exit", "SouthCarolinaBird",
             JOptionPane.PLAIN_MESSAGE, southCarolinaBirdImage, object, object[0]);
       southCarolina.optionChooser(southCarolina, southCarolinaBirdOption, object);
    }
@@ -82,7 +80,7 @@ public class SouthCarolina{
      
       JFrame frame = new JFrame("SouthCarolinaBirdSong");
       JPanel canvas = new JPanel();
-      JLabel text = new JLabel("<html>This is South Carolina state Bird Song! <br> It is the Carolina wren Song <br> Click the play button to play the South Carolina state bird song <br> Select go back to go to the South Carolina state bird!<html>");
+      JLabel text = new JLabel("<html>This is South Carolina state Bird Song! <br> It is the Carolina Wren Song <br> Click the play button to play the South Carolina state bird song <br> Select go back to go to the South Carolina state bird!<html>");
       JLabel picture = new JLabel(southCarolinaBirdSongImage);
       JButton play = new JButton("Play Bird Song!");
       JButton back = new JButton("Go Back!");
@@ -95,7 +93,7 @@ public class SouthCarolina{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    

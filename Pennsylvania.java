@@ -1,10 +1,8 @@
 //test pennsylvania class
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class Pennsylvania{
    Pennsylvania(){
@@ -42,7 +40,7 @@ public class Pennsylvania{
             pennsylvania.pennsylvaniaBirdSong(pennsylvania, option, object);
             break;
          case "go back":
-            fifty.prompt(pennsylvania);
+            fifty.prompt();
             break;
          case "exit":
             System.exit(0);
@@ -64,7 +62,7 @@ public class Pennsylvania{
    public void pennsylvaniaFlower(Pennsylvania pennsylvania, String option, String[] object){
       ImageIcon pennsylvaniaFlowerImage = new ImageIcon("./img/flowers/PennsylvaniaFlower.jpeg");
 
-      String pennsylvaniaFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the Pennsylvania state flower \n It is the Mountain laurel\n \n Select an option for more information about Pennsylvania, go back to select another state, or exit", "PennsylvaniaFlower",
+      String pennsylvaniaFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the Pennsylvania state flower \n It is the Mountain Laurel\n \n Select an option for more information about Pennsylvania, go back to select another state, or exit", "PennsylvaniaFlower",
             JOptionPane.PLAIN_MESSAGE, pennsylvaniaFlowerImage, object, object[0]);
       pennsylvania.optionChooser(pennsylvania, pennsylvaniaFlowerOption, object);
    }
@@ -72,7 +70,7 @@ public class Pennsylvania{
    public void pennsylvaniaBird(Pennsylvania pennsylvania, String option, String[] object){
       ImageIcon pennsylvaniaBirdImage = new ImageIcon("./img/birds/PennsylvaniaBird.jpeg");
 
-      String pennsylvaniaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the Pennsylvania state bird \n It is the Ruffed grouse \n \n Select an option for more information about Pennsylvania, go back to select another state, or exit", "PennsylvaniaBird",
+      String pennsylvaniaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the Pennsylvania state bird \n It is the Ruffed Grouse \n \n Select an option for more information about Pennsylvania, go back to select another state, or exit", "PennsylvaniaBird",
             JOptionPane.PLAIN_MESSAGE, pennsylvaniaBirdImage, object, object[0]);
       pennsylvania.optionChooser(pennsylvania, pennsylvaniaBirdOption, object);
    }
@@ -82,7 +80,7 @@ public class Pennsylvania{
      
       JFrame frame = new JFrame("PennsylvaniaBirdSong");
       JPanel canvas = new JPanel();
-      JLabel text = new JLabel("<html>This is Pennsylvania state Bird Song! <br> It is the Ruffed grouse Song <br> Click the play button to play the Pennsylvania state bird song <br> Select go back to go to the Pennsylvania state bird!<html>");
+      JLabel text = new JLabel("<html>This is Pennsylvania state Bird Song! <br> It is the Ruffed Grouse Song <br> Click the play button to play the Pennsylvania state bird song <br> Select go back to go to the Pennsylvania state bird!<html>");
       JLabel picture = new JLabel(pennsylvaniaBirdSongImage);
       JButton play = new JButton("Play Bird Song!");
       JButton back = new JButton("Go Back!");
@@ -95,7 +93,7 @@ public class Pennsylvania{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    

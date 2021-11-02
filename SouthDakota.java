@@ -7,10 +7,8 @@
 
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class SouthDakota{
    SouthDakota(){
@@ -48,7 +46,7 @@ public class SouthDakota{
             southDakota.southDakotaBirdSong(southDakota, option, object);
             break;
          case "go back":
-            fifty.prompt(southDakota);
+            fifty.prompt();
             break;
          case "exit":
             System.exit(0);
@@ -78,7 +76,7 @@ public class SouthDakota{
    public void southDakotaBird(SouthDakota southDakota, String option, String[] object){
       ImageIcon southDakotaBirdImage = new ImageIcon("./img/birds/SouthDakotaBird.jpeg");
 
-      String southDakotaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the SouthDakota state bird \n It is the Ring-necked pheasant\n \n Select an option for more information about SouthDakota, go back to select another state, or exit", "SouthDakotaBird",
+      String southDakotaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the SouthDakota state bird \n It is the Ring-Necked Pheasant\n \n Select an option for more information about SouthDakota, go back to select another state, or exit", "SouthDakotaBird",
             JOptionPane.PLAIN_MESSAGE, southDakotaBirdImage, object, object[0]);
       southDakota.optionChooser(southDakota, southDakotaBirdOption, object);
    }
@@ -88,7 +86,7 @@ public class SouthDakota{
      
       JFrame frame = new JFrame("SouthDakotaBirdSong");
       JPanel canvas = new JPanel();
-      JLabel text = new JLabel("<html>This is SouthDakota state Bird Song! <br> It is the Ring-necked pheasant Song <br> Click the play button to play the SouthDakota state bird song <br> Select go back to go to the SouthDakota state bird!<html>");
+      JLabel text = new JLabel("<html>This is SouthDakota state Bird Song! <br> It is the Ring-Necked Pheasant Song <br> Click the play button to play the SouthDakota state bird song <br> Select go back to go to the SouthDakota state bird!<html>");
       JLabel picture = new JLabel(southDakotaBirdSongImage);
       JButton play = new JButton("Play Bird Song!");
       JButton back = new JButton("Go Back!");
@@ -101,7 +99,7 @@ public class SouthDakota{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    

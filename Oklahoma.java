@@ -1,10 +1,8 @@
 //test oklahoma class
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class Oklahoma{
    Oklahoma(){
@@ -42,7 +40,7 @@ public class Oklahoma{
             oklahoma.oklahomaBirdSong(oklahoma, option, object);
             break;
          case "go back":
-            fifty.prompt(oklahoma);
+            fifty.prompt();
             break;
          case "exit":
             System.exit(0);
@@ -64,7 +62,7 @@ public class Oklahoma{
    public void oklahomaFlower(Oklahoma oklahoma, String option, String[] object){
       ImageIcon oklahomaFlowerImage = new ImageIcon("./img/flowers/OklahomaFlower.jpeg");
 
-      String oklahomaFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the Oklahoma state flower \n It is the Oklahoma rose\n \n Select an option for more information about Oklahoma, go back to select another state, or exit", "OklahomaFlower",
+      String oklahomaFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the Oklahoma state flower \n It is the Oklahoma Rose\n \n Select an option for more information about Oklahoma, go back to select another state, or exit", "OklahomaFlower",
             JOptionPane.PLAIN_MESSAGE, oklahomaFlowerImage, object, object[0]);
       oklahoma.optionChooser(oklahoma, oklahomaFlowerOption, object);
    }
@@ -72,7 +70,7 @@ public class Oklahoma{
    public void oklahomaBird(Oklahoma oklahoma, String option, String[] object){
       ImageIcon oklahomaBirdImage = new ImageIcon("./img/birds/OklahomaBird.jpeg");
 
-      String oklahomaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the Oklahoma state bird \n It is the Scissor-tailed flycatcher \n \n Select an option for more information about Oklahoma, go back to select another state, or exit", "OklahomaBird",
+      String oklahomaBirdOption = (String) JOptionPane.showInputDialog(null, "This is the Oklahoma state bird \n It is the Scissor-Tailed Flycatcher \n \n Select an option for more information about Oklahoma, go back to select another state, or exit", "OklahomaBird",
             JOptionPane.PLAIN_MESSAGE, oklahomaBirdImage, object, object[0]);
       oklahoma.optionChooser(oklahoma, oklahomaBirdOption, object);
    }
@@ -82,7 +80,7 @@ public class Oklahoma{
      
       JFrame frame = new JFrame("OklahomaBirdSong");
       JPanel canvas = new JPanel();
-      JLabel text = new JLabel("<html>This is Oklahoma state Bird Song! <br> It is the Scissor-tailed flycatcher Song <br> Click the play button to play the Oklahoma state bird song <br> Select go back to go to the Oklahoma state bird!<html>");
+      JLabel text = new JLabel("<html>This is Oklahoma state Bird Song! <br> It is the Scissor-Tailed Flycatcher Song <br> Click the play button to play the Oklahoma state bird song <br> Select go back to go to the Oklahoma state bird!<html>");
       JLabel picture = new JLabel(oklahomaBirdSongImage);
       JButton play = new JButton("Play Bird Song!");
       JButton back = new JButton("Go Back!");
@@ -95,7 +93,7 @@ public class Oklahoma{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    

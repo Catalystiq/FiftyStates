@@ -3,10 +3,8 @@
 
 
 import javax.swing.*;
-import java.awt.*;
 import javax.sound.sampled.*;
 import java.io.File;
-import java.util.*;
 
 public class NewMexico{
    NewMexico(){
@@ -74,7 +72,7 @@ public class NewMexico{
    public void newMexicoBird(NewMexico newMexico, String option, String[] object){
       ImageIcon newMexicoBirdImage = new ImageIcon("./img/birds/NewMexicoBird.jpeg");
 
-      String newMexicoBirdOption = (String) JOptionPane.showInputDialog(null, "This is the New Mexico state bird \n It is the Greater roadrunner \n \n Select an option for more information about New Mexico, go back to select another state, or exit", "NewMexicoBird",
+      String newMexicoBirdOption = (String) JOptionPane.showInputDialog(null, "This is the New Mexico state bird \n It is the Greater Roadrunner \n \n Select an option for more information about New Mexico, go back to select another state, or exit", "NewMexicoBird",
             JOptionPane.PLAIN_MESSAGE, newMexicoBirdImage, object, object[0]);
       newMexico.optionChooser(newMexico, newMexicoBirdOption, object);
    }
@@ -84,7 +82,7 @@ public class NewMexico{
      
       JFrame frame = new JFrame("NewMexicoBirdSong");
       JPanel canvas = new JPanel();
-      JLabel text = new JLabel("<html>This is New Mexico state Bird Song! <br> It is the Greater roadrunner Song <br> Click the play button to play the New Mexico state bird song <br> Select go back to go to the New Mexico state bird!<html>");
+      JLabel text = new JLabel("<html>This is New Mexico state Bird Song! <br> It is the Greater Roadrunner Song <br> Click the play button to play the New Mexico state bird song <br> Select go back to go to the New Mexico state bird!<html>");
       JLabel picture = new JLabel(newMexicoBirdSongImage);
       JButton play = new JButton("Play Bird Song!");
       JButton back = new JButton("Go Back!");
@@ -97,7 +95,7 @@ public class NewMexico{
       canvas.add(back);
 
       frame.add(canvas); 
-      frame.setSize(600,600);
+      frame.setSize(600,450);
       frame.setVisible(true);
    }
    
