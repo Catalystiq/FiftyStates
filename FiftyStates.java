@@ -17,6 +17,13 @@ public class FiftyStates{
       Alabama alabama = new Alabama();
       Alaska alaska = new Alaska();
       Arizona arizona = new Arizona();
+      Arkansas arkansas = new Arkansas();
+      California california = new California();
+      Colorado colorado = new Colorado();
+      Connecticut connecticut = new Connecticut();
+      Delaware delaware = new Delaware();
+      Florida florida = new Florida();
+      Georgia georgia = new Georgia();
       NewMexico newMexico = new NewMexico();
       NewYork newYork = new NewYork();
       NorthCarolina northCarolina = new NorthCarolina();
@@ -45,6 +52,27 @@ public class FiftyStates{
             break;
          case "arizona":
             arizona.arizonaPrompt();
+            break;
+         case "arkansas":
+            arkansas.arkansasPrompt();
+            break;
+         case "california":
+            california.californiaPrompt();
+            break;
+         case "colorado":
+            colorado.coloradoPrompt();
+            break;
+         case "connecticut":
+            connecticut.connecticutPrompt();
+            break;
+         case "delaware":
+            delaware.delawarePrompt();
+            break;
+         case "florida":
+            florida.floridaPrompt();
+            break;
+         case "georgia":
+            georgia.georgiaPrompt();
             break;
          case "new mexico":
             newMexico.newMexicoPrompt();
