@@ -14,6 +14,7 @@ public class FiftyStates{
    
    public void prompt(){
       ImageIcon map = new ImageIcon("./img/other/map.jpg");
+      FiftyStates states = new FiftyStates();
       Alabama alabama = new Alabama();
       Alaska alaska = new Alaska();
       Arizona arizona = new Arizona();
@@ -59,8 +60,12 @@ public class FiftyStates{
       Utah utah = new Utah();
       Vermont vermont = new Vermont();
       Virginia virginia = new Virginia();
+      Washington washington = new Washington();
+      WestVirginia westVirginia = new WestVirginia();
+      Wisconsin wisconsin = new Wisconsin();
+      Wyoming wyoming = new Wyoming();
       
-      String promptOption = (String) JOptionPane.showInputDialog(null, "Enter a State: ", "FiftyStates", JOptionPane.PLAIN_MESSAGE,
+      String promptOption = (String) JOptionPane.showInputDialog(null, "Welcome to Fifty States! \nEnter exit to exit the program \nEnter a State to learn more about it \n(states with two words must have a space in between):  ", "FiftyStates", JOptionPane.PLAIN_MESSAGE,
             map, null, null);
             
       switch(promptOption.toLowerCase()){
@@ -140,13 +145,13 @@ public class FiftyStates{
             missouri.missouriPrompt();
             break;
          case "montana":
-         montana.montanaPrompt();
+            montana.montanaPrompt();
             break;
          case "nebraska":
-         nebraska.nebraskaPrompt();
+            nebraska.nebraskaPrompt();
             break;
          case "nevada":
-         nevada.nevadaPrompt();
+            nevada.nevadaPrompt();
             break;
          case "new hampshire":
             newHampshire.newHampshirePrompt();
@@ -199,8 +204,24 @@ public class FiftyStates{
          case "virginia":
             virginia.virginiaPrompt();
             break;
+         case "washington":
+            washington.washingtonPrompt();
+            break;
+         case "west virginia":
+            westVirginia.westVirginiaPrompt();
+            break;
+         case "wisconsin":
+            wisconsin.wisconsinPrompt();
+            break;
+         case "wyoming":
+            wyoming.wyomingPrompt();
+            break;
          case "exit":
             System.exit(0);
+            break;
+         default:
+            JOptionPane.showMessageDialog(null, "Invalid State Name!", "HauntedHouse", JOptionPane.ERROR_MESSAGE, null);
+            states.prompt();
             break;
             
       }
