@@ -5,6 +5,9 @@
 # TODO
 
 ✓ trim bird audio to 10 seconds or less
+
 ✓ finish state sets
 
-- test all states
+✓ test all states
+
+✓ done
