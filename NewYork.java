@@ -64,7 +64,7 @@ public class NewYork{
    }
    
    public void newYorkFlower(NewYork newYork, String option, String[] object){
-      ImageIcon newYorkFlowerImage = new ImageIcon("./img/flowers/NewYorkFlower.jpeg");
+      ImageIcon newYorkFlowerImage = new ImageIcon("./img/flowers/NewYorkFlower.jpg");
 
       String newYorkFlowerOption = (String) JOptionPane.showInputDialog(null, "This is the New York state flower \n It is the Rose\n \n Select an option for more information about New York, go back to select another state, or exit", "NewYorkFlower",
             JOptionPane.PLAIN_MESSAGE, newYorkFlowerImage, object, object[0]);
