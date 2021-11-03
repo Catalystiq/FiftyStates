@@ -29,6 +29,21 @@ public class FiftyStates{
       Illinois illinois = new Illinois();
       Indiana indiana = new Indiana();
       Iowa iowa = new Iowa();
+      Kansas kansas = new Kansas();
+      Kentucky kentucky = new Kentucky();
+      Louisiana louisiana = new Louisiana();
+      Maine maine = new Maine();
+      Maryland maryland = new Maryland();
+      Massachusetts massachusetts = new Massachusetts();
+      Michigan michigan = new Michigan();
+      Minnesota minnesota = new Minnesota();
+      Mississippi mississippi = new Mississippi();
+      Missouri missouri = new Missouri();
+      Montana montana = new Montana();
+      Nebraska nebraska = new Nebraska();
+      Nevada nevada = new Nevada();
+      NewHampshire newHampshire = new NewHampshire();
+      NewJersey newJersey = new NewJersey();
       NewMexico newMexico = new NewMexico();
       NewYork newYork = new NewYork();
       NorthCarolina northCarolina = new NorthCarolina();
@@ -93,6 +108,51 @@ public class FiftyStates{
             break;
          case "iowa":
             iowa.iowaPrompt();
+            break;
+         case "kansas":
+            kansas.kansasPrompt();
+            break;
+         case "kentucky":
+            kentucky.kentuckyPrompt();
+            break;
+         case "louisiana":
+            louisiana.louisianaPrompt();
+            break;
+         case "maine":
+            maine.mainePrompt();
+            break;
+         case "maryland":
+            maryland.marylandPrompt();
+            break;
+         case "massachusetts":
+            massachusetts.massachusettsPrompt();
+            break;
+         case "michigan":
+            michigan.michiganPrompt();
+            break;
+         case "minnesota":
+            minnesota.minnesotaPrompt();
+            break;
+         case "mississippi":
+            mississippi.mississippiPrompt();
+            break;
+         case "missouri":
+            missouri.missouriPrompt();
+            break;
+         case "montana":
+         montana.montanaPrompt();
+            break;
+         case "nebraska":
+         nebraska.nebraskaPrompt();
+            break;
+         case "nevada":
+         nevada.nevadaPrompt();
+            break;
+         case "new hampshire":
+            newHampshire.newHampshirePrompt();
+            break;
+         case "new jeresy":
+            newJersey.newJerseyPrompt();
             break;
          case "new mexico":
             newMexico.newMexicoPrompt();
