@@ -1,4 +1,8 @@
-//test louisiana class
+//FiftyStates
+//James Nelson
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project Louisiana
 
 import javax.swing.*;
 import javax.sound.sampled.*;

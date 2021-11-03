@@ -1,4 +1,8 @@
-//test wisconsin class
+//FiftyStates
+//Joshua Hammond
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project Wisconsin
 
 import javax.swing.*;
 import javax.sound.sampled.*;

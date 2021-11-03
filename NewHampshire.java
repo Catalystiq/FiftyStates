@@ -1,4 +1,8 @@
-//test newHampshire class
+//FiftyStates
+//James Nelson
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project New Hampshire
 
 import javax.swing.*;
 import javax.sound.sampled.*;

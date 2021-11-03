@@ -1,4 +1,8 @@
-//test layout class
+//FiftyStates
+//James Nelson
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project State Layout
 
 import javax.swing.*;
 import javax.sound.sampled.*;

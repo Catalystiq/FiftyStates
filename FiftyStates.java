@@ -1,8 +1,8 @@
 //FiftyStates
-//James, Josh, Hiba
+//James Nelson
 //Computer Programming I
 //October 19, 2021
-//Fifty States Project
+//Fifty States Project Main Prompt
 
 import javax.swing.*;
 
@@ -48,6 +48,7 @@ public class FiftyStates{
       NewMexico newMexico = new NewMexico();
       NewYork newYork = new NewYork();
       NorthCarolina northCarolina = new NorthCarolina();
+      NorthDakota northDakota = new NorthDakota();
       Ohio ohio = new Ohio();
       Oklahoma oklahoma = new Oklahoma();
       Oregon oregon = new Oregon();
@@ -167,6 +168,9 @@ public class FiftyStates{
             break;
          case "north carolina":
             northCarolina.northCarolinaPrompt();
+            break;
+         case "north dakota":
+            northDakota.northDakotaPrompt();
             break;
          case "ohio":
             ohio.ohioPrompt();

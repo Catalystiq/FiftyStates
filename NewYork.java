@@ -1,4 +1,8 @@
-//test newYork class
+//FiftyStates
+//Hiba Sarwar
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project New York
 
 import javax.swing.*;
 import javax.sound.sampled.*;

@@ -1,4 +1,8 @@
-//test michigan class
+//FiftyStates
+//James Nelson
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project Michigan
 
 import javax.swing.*;
 import javax.sound.sampled.*;

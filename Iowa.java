@@ -1,4 +1,8 @@
-//test iowa class
+//FiftyStates
+//James Nelson
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project Iowa
 
 import javax.swing.*;
 import javax.sound.sampled.*;

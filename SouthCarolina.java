@@ -1,4 +1,8 @@
-//test southCarolina class
+//FiftyStates
+//Hiba Sarwar
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project South Carolina
 
 import javax.swing.*;
 import javax.sound.sampled.*;

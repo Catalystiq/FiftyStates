@@ -1,8 +1,8 @@
-//Tennessee
+//FiftyStates
 //Joshua Hammond
-//October 28, 2021
-//Computer Programming 1
-
+//Computer Programming I
+//October 19, 2021
+//Fifty States Project Tennessee
 
 import javax.swing.*;
 import javax.sound.sampled.*;
