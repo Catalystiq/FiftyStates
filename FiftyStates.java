@@ -157,7 +157,7 @@ public class FiftyStates{
          case "new hampshire":
             newHampshire.newHampshirePrompt();
             break;
-         case "new jeresy":
+         case "new jersey":
             newJersey.newJerseyPrompt();
             break;
          case "new mexico":
