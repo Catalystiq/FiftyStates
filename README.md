@@ -11,3 +11,9 @@
 ✓ test all states
 
 ✓ done
+
+# How to Run
+
+Download the repository and unzip the zipped repository.
+Run the `FiftyStates.java` file to run the project
+Enjoy!
